@@ -8,30 +8,30 @@ body {
 	font-size: 17px
 }
 
+
+
 h1 {
-	.playfair-display-<uniquifier> {
-		font-family: "Playfair Display", sans-serif;
-		font-optical-sizing: auto;
-		font-weight: 500;
-		font-style: normal;
-		color: rgb(203,96,64);
-		letter-spacing: 3px;
-		font-size: 50px;}
-	}
+	font-family: "Playfair Display", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	color: rgb(203, 96, 64);
+	letter-spacing: 3px;
+	font-size: 50px;
+}
 
 h2 {
-	.arima-<uniquifier> {
-		font-family: "Arima", system-ui;
-		font-optical-sizing: auto;
-		font-weight: 200;
-		font-style: normal;
-		color: rgb(203,96,64);
-		font-size: 24px;
-		font-weight: lighter;
-		text-shadow: ivory;
-		text-decoration-line: white;
-	}
+	font-family: "Arima", system-ui;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+	color: rgb(203, 96, 64);
+	font-size: 24px;
+	font-weight: lighter;
+	text-shadow: 1px 1px 2px ivory;
 }
+
+
 
 
 a {
@@ -49,26 +49,28 @@ a:hover {
 
 
 
-
-
-/* Custom design with class (99% of your design) */
-
-
 .container { 
-	width: 700px;  
-	margin: 60px auto;  
+	max-width: 90%;
+	width: 700px;
+	margin: 60px auto;
 	background-color: white;
-	box-shadow : 0px 10px 30px rgba(0, 0, 0, 1.0) ; 
-	padding : 60px; 
-	border-radius : 5px;       
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 1.0);
+	padding: 60px;
+	border-radius: 5px;
 }
-
-@media (max-width: 500px) {
+@media (max-width: 760px) {
 	.container {
-		width:400px;
+		max-width: 95%;
 		background-color: rgb(3, 53, 76);
 	}
 }
+@media (max-width: 500px) {
+	.container {
+		max-width: 100%;
+		padding: 40px;
+	}
+}
+
 
 
 
@@ -83,15 +85,15 @@ a:hover {
 }
 
 
-
-
-
 .img-circle { 
 	background-color: white;
 	border-radius: 50%;
-	padding: 3px 10px;
-	box-shadow: 0px 10px 30px rgba(0, 0, 0, 1.0)
+	padding: 5px;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 1.0);
+	width: 150px; /* Adjust as needed */
+	height: auto;
 }
+
 
 
 
@@ -106,17 +108,39 @@ a:hover {
 
 
 
-.btn-white :hover { 
-	background-color: back;
+
+.btn-white:hover { 
+	background-color: black;
 	color: white;
 }
-
-
 
 
 .list-vertical {
 	list-style: none;
 	padding: 0px;
+}
+
+
+.list-horizontal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px; /* Adds spacing */
+	padding: 0;
+}
+
+.list-horizontal li {
+	list-style: none;
+}
+
+.list-horizontal i {
+	font-size: 60px;
+	color: whitesmoke;
+	transition: color 0.3s ease-in-out;
+}
+
+.list-horizontal i:hover {
+	color: black;
 }
 
 
